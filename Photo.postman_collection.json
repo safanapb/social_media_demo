@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "20667d60-1153-4203-a84b-ff1f5c148b02",
+		"name": "Photo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user_creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"noor@gmail.com\",\r\n    \"password\":\"noorb1234\",\r\n    \"confirm_password\":\"noorb1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/user-creation/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"user-creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin_creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"noorb@gmail.com\",\r\n    \"password\":\"noorb1234\",\r\n    \"confirm_password\":\"noorb1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/admin-creation/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"admin-creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"noorb@gmail.com\",\r\n    \"password\":\"noorb1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tag_creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzIwODg4LCJpYXQiOjE2NzkzMTcyODgsImp0aSI6ImViNjJiNzQxNjgxNzRmMGNhZDBiYjM0ODE1YmFlZDgyIiwidXNlcl9pZCI6Mn0.-BUDD5Gb0d6QLK22kiym9ExkDnAgSbnf2_iozV2XMWs",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"health\",\r\n    \"weight\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/tag/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tag",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tag_listing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzIwODg4LCJpYXQiOjE2NzkzMTcyODgsImp0aSI6ImViNjJiNzQxNjgxNzRmMGNhZDBiYjM0ODE1YmFlZDgyIiwidXNlcl9pZCI6Mn0.-BUDD5Gb0d6QLK22kiym9ExkDnAgSbnf2_iozV2XMWs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/tag/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tag",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-creation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzEyMTU5LCJpYXQiOjE2NzkzMDg1NTksImp0aSI6IjYyM2FiYTU0MjY2NTRkZDhiNjU2NjE4YWViNDA5YTU4IiwidXNlcl9pZCI6Mn0.XATGsIwxRYczDMDcdLZBNGZsipv2mm73ucdWP50mmvk",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/safana.b/Pictures/download.jfif"
+						},
+						{
+							"key": "description",
+							"value": "dhweyd6weydhwj",
+							"contentType": "",
+							"type": "default"
+						},
+						{
+							"key": "tags",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "tags",
+							"value": "4",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/post-creation/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"post-creation",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-listing",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzEyMTU5LCJpYXQiOjE2NzkzMDg1NTksImp0aSI6IjYyM2FiYTU0MjY2NTRkZDhiNjU2NjE4YWViNDA5YTU4IiwidXNlcl9pZCI6Mn0.XATGsIwxRYczDMDcdLZBNGZsipv2mm73ucdWP50mmvk",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/post-listing/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"post-listing",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_liking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MzIwMDE4LCJpYXQiOjE2NzkzMTY0MTgsImp0aSI6ImVkNGIxNzEyMDQ3ZDQ3ZjA5MDAxY2I0NzI0MmQ2YTQyIiwidXNlcl9pZCI6Mn0.t2ke5BTP2x6xwxsReB5esFEJHZoRtJwDkIcTfGlYe8M",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"like\":1,\r\n    \"post\":10\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/post-like/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"post-like",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
